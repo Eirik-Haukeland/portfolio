@@ -10,20 +10,20 @@
     <p>
         Welcome to my portfolio site. Here you will find
         some of my best work with links to their
-        repository's and, if available links to a running
-        example of the site the project.
+        repositories and, if available, links to a running
+        example of the project.
     </p>
     <p>
-        Fore more projects that either is unfinished or that
-        I only have collaborated on and as such don not fit
+        For more projects that are either unfinished or that
+        I only have collaborated on, and as such do not fit
         into a list of my personal projects, please go to my
         <a href="https://github.com/Eirik-Haukeland">GitHub profile</a>
         and look around
     </p>
     <p>
-        This portfolio page where developed with the use of
-        <a href="http://www.svelte.dev">svelte</a> The
-        choice of technology was made primly so that I Could
+        This portfolio page where developed using
+        <a href="http://www.svelte.dev">svelte</a>. The
+        choice of technology was made primarily so that I could
         practice for an internship later in this year.
     </p>
 </section>
@@ -36,14 +36,14 @@
     </figure>
     <p>
         I have been studying front-end web development at
-        <a href="https://www.noroff.no/"> Noroff school of technology</a>
+        <a href="https://www.noroff.no/"> Noroff School of technology and digital media</a>
         for a year and have completed many different
         projects during that time.
     </p>
     <p>
         Before starting my studies in web development, I
-        worked for many years a a cook in various
-        institutions and hotels
+        worked for many years as a cook in various
+        institutions and hotels.
     </p>
 </section>
 

@@ -9,14 +9,14 @@
 		{
 			img: gameHubImg,
 			title: 'GameHub',
-			description: 'game store on line. That fetches data form a wordpress api with functionality to add product to a cart as well as sending in a message',
+			description: 'Game store on-line. That fetches data form a WordPress api with functionality to add product to a cart as well as sending in a message',
 			repoLink: 'https://github.com/Noroff-FEU-Assignments/cross-course-project-Eirik-Haukeland',
 			deployedLink: 'https://fantastic-pegasus-1d8ebd.netlify.app/'
 		},
 		{
 			img: hebsRecipesImg,
 			title: "Heb's Recipes",
-			description: 'cooking blog site. Recipes are added on a wordpress server and fetched on load. This page has the ability to search for recipes and filter recipes by tag which are populated form the recipes.',
+			description: 'Cooking blog site. Recipes are added on a WordPress server and fetched on load. This page has the ability to search for recipes and filter recipes by tag which are populated form the recipes.',
 			repoLink: 'https://github.com/Noroff-FEU-Assignments/project-exam-1-Eirik-Haukeland',
 			deployedLink: 'https://joyful-halva-a4d44f.netlify.app/index.html'
 		},
