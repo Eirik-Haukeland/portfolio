@@ -12,7 +12,7 @@
 		<h2>{title}</h2>
 		<p>{description}</p>
 		<a href={repoLink}><img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/github/github-original.svg" alt="github link"/><span>GitHub</span></a>
-		<a href={deployedLink}><img src="https://img.icons8.com/material-rounded/1x/globe.png" alt="web link" /><span>project on line</span></a>
+		<a href={deployedLink}><img src="https://img.icons8.com/material-rounded/1x/globe.png" alt="web link" /><span>Visit</span></a>
 	</div>
 </div>
 
