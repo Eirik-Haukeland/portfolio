@@ -6,7 +6,7 @@
 	import {page} from "$app/stores";
 
 	let isMenuOpen = false;
-	let windowLargerThan700 = true;
+	let windowLargerThan700 = false;
 
 	let headerHeight = "0px";
 
@@ -16,13 +16,12 @@
 	let menuBtn
 
 	onMount(() => {
+		windowLargerThan700 = window.innerWidth > 700;
+
 		const header = document.querySelector("header");
 		headerHeight = `${parseInt(getComputedStyle(header).getPropertyValue("height"))}px`;
 
-		windowLargerThan700 = window.innerWidth > 700;
-
 		window.addEventListener("resize", () => windowLargerThan700 = window.innerWidth > 700);
-
 		window.addEventListener("click", (e) => {
 			if (isMenuOpen && !(menuBtn.contains(e.target) || menuBtn === e.target) ) {
 				isMenuOpen = nav.contains(e.target)
@@ -40,10 +39,10 @@
 		</button>
 		<ul style='--header-height:{headerHeight}' hidden={!isMenuOpen && !windowLargerThan700}>
 			<li>
-				<a on:click={closeMenuOnNavigation} aria-current={$page.url.pathname === "/" ? "page" : undefined} href="/">home</a>
+				<a on:click={closeMenuOnNavigation} aria-current={$page.url.pathname === "/" ? "page" : undefined} href="/">Home</a>
 			</li>
 			<li>
-				<a on:click={closeMenuOnNavigation} aria-current={$page.url.pathname === "/about" ? "page" : undefined} href="/about">about</a>
+				<a on:click={closeMenuOnNavigation} aria-current={$page.url.pathname === "/about" ? "page" : undefined} href="/about">bout</a>
 			</li>
 		</ul>
 	</nav>
@@ -90,7 +89,8 @@
 
 	@media screen and (max-width: 700px) {
 		header {
-			position: relative;
+			position: sticky;
+			top: 0;
 			padding-inline: 1rem;
 		}
 

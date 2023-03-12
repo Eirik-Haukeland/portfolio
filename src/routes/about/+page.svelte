@@ -8,26 +8,23 @@
 <section aria-labelledby="aboutPageTitle">
     <h2 id="aboutPageTitle">About portfolio page</h2>
     <p>
-        Welcome to my portfolio site. here you will find
-        some of my better work with links to there
-        repository's and if available links to a running
-        example of the site of project.
+        Welcome to my portfolio site. Here you will find
+        some of my best work with links to their
+        repository's and, if available links to a running
+        example of the site the project.
     </p>
     <p>
         Fore more projects that either is unfinished or that
-        i only have collaborated on and as such don not fit
-        into a list of my personal projects please go to my
+        I only have collaborated on and as such don not fit
+        into a list of my personal projects, please go to my
         <a href="https://github.com/Eirik-Haukeland">GitHub profile</a>
         and look around
     </p>
     <p>
         This portfolio page where developed with the use of
         <a href="http://www.svelte.dev">svelte</a> The
-        chose of technology was made primly so that i Could
-        practice for a internship later in this year.
-    </p>
-    <p>
-
+        choice of technology was made primly so that I Could
+        practice for an internship later in this year.
     </p>
 </section>
 
@@ -38,15 +35,15 @@
         <figcaption>Eirik B. Haukeland</figcaption>
     </figure>
     <p>
-        I have been studying frontend web development at
+        I have been studying front-end web development at
         <a href="https://www.noroff.no/"> Noroff school of technology</a>
-        for a year and have completed meny different
-        project during that time.
+        for a year and have completed many different
+        projects during that time.
     </p>
     <p>
-        before starting my studies in web development i
-        worked for meny years a a cook in various institutions
-        and hotels
+        Before starting my studies in web development, I
+        worked for many years a a cook in various
+        institutions and hotels
     </p>
 </section>
 
@@ -60,7 +57,7 @@
         column-gap: 1rem;
         grid-auto-flow: dense;
         max-width: 30vw;
-        min-width: 20rem;
+        min-width: 25rem;
         grid-template-columns: 1fr min-content;
     }
 
@@ -103,10 +100,6 @@
         place-self: start center;
     }
 
-    figcaption {
-        justify-self: center;
-    }
-
     #photoOfPerson {
         --img-size: 10em;
         height: var(--img-size);
@@ -115,4 +108,26 @@
         border-radius: 50%;
     }
 
+    figcaption {
+        justify-self: center;
+    }
+
+    @media screen and (max-width: 400px) {
+        section, #aboutMe {
+            min-width: 20rem;
+        }
+
+        #aboutMe > figure {
+            grid-column: 1 / span 2;
+            grid-row: span 1
+        }
+
+        #photoOfPerson {
+            --img-size: 15rem
+        }
+
+        #aboutMe > p {
+            grid-column: 1 / span 2;
+        }
+    }
 </style>
