@@ -16,7 +16,7 @@
 	let menuBtn
 
 	onMount(() => {
-		windowLargerThan700 = window.innerWidth > 700;
+		setTimeout(() => windowLargerThan700 = window.innerWidth > 700, 100)
 
 		const header = document.querySelector("header");
 		headerHeight = `${parseInt(getComputedStyle(header).getPropertyValue("height"))}px`;
@@ -42,7 +42,7 @@
 				<a on:click={closeMenuOnNavigation} aria-current={$page.url.pathname === "/" ? "page" : undefined} href="/">Home</a>
 			</li>
 			<li>
-				<a on:click={closeMenuOnNavigation} aria-current={$page.url.pathname === "/about" ? "page" : undefined} href="/about">bout</a>
+				<a on:click={closeMenuOnNavigation} aria-current={$page.url.pathname === "/about" ? "page" : undefined} href="/about">About</a>
 			</li>
 		</ul>
 	</nav>
