@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--main-color: hsl(120deg, 94%, 20%);
+	--alt-color: hsl(0, 0%, 100%);
+	--border-color: hsl(0, 0%, 0%);
+	--main-text-color: hsl(0, 0%, 100%);
+	--alt-text-color: hsl(0, 0%, 0%);
+	--main-font: "roboto", serif;
+	--title-font: 'roboto slab', Serif;
+}
